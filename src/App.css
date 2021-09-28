@@ -1,38 +1,38 @@
-.App {
-  text-align: center;
+.app-wrapper {
+  margin: 0 auto;
+  display: grid;
+  /* width: 1500px;   */
+  grid-template-areas: "h h" "n c";
+
+  grid-template-rows: 60px 1fr;
+  grid-template-columns: 2fr 10fr;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-wrapper-content {
+  grid-area: c;
+  background-color: #75734F;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Основной Цвет:
+#00A67C	#1F7C65	#006C51	#35D2AB	#5FD2B5
+Вторичный Цвет A:
+#0C5DA5	#26537C	#043A6B	#408DD2	#679FD2
+Вторичный Цвет B:
+#1DD300	#389E28	#138900	#52E93A	#7AE969 */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* Основной Цвет:
+RAL 6007
+(1C2617)	RAL 6018
+(4FA833)	RAL 6013
+(75734F)
+Вторичный Цвет A:
+RAL 6005
+(0A381F)	RAL 9011
+(0D121A)	RAL 5021
+(1A7A63)	RAL 6033
+(428C78)
+Вторичный Цвет B:
+RAL 6022
+(2B261C)	RAL 1027
+(997521) */
